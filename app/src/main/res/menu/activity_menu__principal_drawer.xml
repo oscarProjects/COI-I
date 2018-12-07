@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_entradas"
+            android:icon="@drawable/icon_entradas"
+            android:title="@string/action_entradas" />
+        <item
+            android:id="@+id/nav_salidas"
+            android:icon="@drawable/icon_salidas"
+            android:title="@string/action_salidas" />
+        <item
+            android:id="@+id/nav_inventarios"
+            android:icon="@drawable/icon_inventario"
+            android:title="@string/action_inventarios" />
+        <item
+            android:id="@+id/nav_salida_ruta"
+            android:icon="@drawable/icon_salida_ruta"
+            android:title="@string/action_salida_ruta" />
+        <item
+            android:id="@+id/nav_ruta_detalle"
+            android:icon="@drawable/icon_ruta_detalle"
+            android:title="@string/action_ruta_detalle" />
+        <item
+            android:id="@+id/nav_devoluciones"
+            android:icon="@drawable/icon_devoluciones"
+            android:title="@string/action_devoluciones" />
+        <item
+            android:id="@+id/nav_sincronizar_catalogos"
+            android:icon="@drawable/icon_sincronizacion"
+            android:title="@string/action_sincronizar_catalogo" />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@drawable/icon_configuracion"
+            android:title="@string/action_sincronizar_configuracion" />
+    </group>
+
+
+</menu>

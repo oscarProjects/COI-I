@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Inputs"
+    tools:showIn="@layout/activity_inputs">
+
+
+<LinearLayout
+    android:id="@+id/linear_papa_inputs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/formulario_entradas_inputs"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:elevation="20dp"
+        android:background="#fff">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_pedidos_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_no_pedidos_inputs"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inputs_pedido"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/contentDescriptionImages"
+                app:srcCompat="@drawable/icon_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_editText_one_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittext_inputs_pedidos"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/hint_edit_text"
+                android:inputType="text"
+                app:fontFamily="@font/bebasneue_regular" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="25dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_tarimas_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_tarima_inputs"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inputs_tarima"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/contentDescriptionImages"
+                app:srcCompat="@drawable/icon_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_editText_two_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittext_tarimas_inputs"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/hint_edit_text"
+                android:inputType="number"
+                app:fontFamily="@font/bebasneue_regular" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="25dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_sku_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_sku_inputs"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inputs_sku"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/contentDescriptionImages"
+                app:srcCompat="@drawable/icon_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_editText_three_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittext_sku_inputs"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:hint="@string/hint_edit_text"
+                android:inputType="text"
+                app:fontFamily="@font/bebasneue_regular" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="25dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_descripcion_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_descripcion_inputs"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inputs_descripcion"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/contentDescriptionImages"
+                app:srcCompat="@drawable/icon_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_editText_four_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittext_descripcion_inputs"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/hint_edit_text"
+                android:inputType="text"
+                android:enabled="false"
+                app:fontFamily="@font/bebasneue_regular" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="25dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_frescura_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_frecura_inputs"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inputs_frescura"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/contentDescriptionImages"
+                app:srcCompat="@drawable/icon_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_editText_five_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittext_frescura_inputs"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/hint_edit_text"
+                android:inputType="text"
+                android:enabled="false"
+                app:fontFamily="@font/bebasneue_regular" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="25dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_buffer_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_buffer_inputs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inputs_buffer"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <Spinner
+                android:id="@+id/sp_buffer_inputs"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_guardar_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="#0B8E36"
+        android:fontFamily="@font/bebasneue_regular"
+        android:gravity="center"
+        android:text="@string/button_guardar"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

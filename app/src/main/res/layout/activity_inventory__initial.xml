@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Inventory_Initial">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#fff"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_ruta_returns"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inventory_initial_lote"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <Spinner
+                android:id="@+id/spinner_lote_inventory_initial"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_sku_cod_i_i"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inventory_initial_cod"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_i_i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_anchor="@id/app_bar"
+                app:layout_anchorGravity="center"
+                app:maxImageSize="30dp"
+                app:srcCompat="@drawable/barcode_scan" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_editText_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittext_sku_cod_i_i"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/hint_edit_text"
+                android:inputType="number"
+                app:fontFamily="@font/bebasneue_regular" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_descripcion_i_i"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inputs_descripcion"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <TextView
+                android:id="@+id/textView_set_descripcion_i_i"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="@string/hint_edit_text"
+                android:textSize="20sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_frescura_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_frecura_inputs"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inputs_frescura"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <TextView
+                android:id="@+id/textView_set_frescura_i_i"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="@string/hint_edit_text"
+                android:textSize="20sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_ubicacion_i_i"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inventory_initial_ubicacion"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <Spinner
+                android:id="@+id/spinner_ubicacion_inventory_initial"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_unidad_medida_i_i"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inventory_initial_unidad_medida"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <Spinner
+                android:id="@+id/spinner_unidad_medida_inventory_initial"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#CCDEC2"></View>
+
+        <LinearLayout
+            android:id="@+id/linear_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_cantidad_i_i"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/inventory_initial_cantidad"
+                android:textSize="30sp"
+                app:fontFamily="@font/bebasneue_regular" />
+
+            <ImageView
+                android:id="@+id/imageViewx"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/contentDescriptionImages"
+                app:srcCompat="@drawable/icon_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_editText_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittext_cantidad_i_i"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/hint_edit_text"
+                android:inputType="number"
+                app:fontFamily="@font/bebasneue_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:background="#0B8E36"
+        android:fontFamily="@font/bebasneue_regular"
+        android:gravity="center"
+        android:text="@string/button_guardar"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

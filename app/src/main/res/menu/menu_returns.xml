@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.administrador.heinekenandroid.Returns">
+    <item
+        android:id="@+id/action_favorite"
+        android:orderInCategory="300"
+        android:title=""
+        android:icon="@drawable/icon_configuracion"
+        app:showAsAction="ifRoom"></item>
+</menu>
